@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" style="min-height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            height: 5vh;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .row {
+            position: relative;
+            margin-bottom: 15vh;
+        }
+
+        .col-1 {
+            float: left;
+            width: 8.33%;
+            padding: 5px
+        }
+
+        .col-2 {
+            float: left;
+            width: 16.66%;
+            padding: 5px
+        }
+
+        .col-3 {
+            float: left;
+            width: 25%;
+            padding: 5px
+        }
+
+        .col-4 {
+            float: left;
+            width: 33.33%;
+            padding: 5px
+        }
+
+        .col-5 {
+            float: left;
+            width: 41.66%;
+            padding: 5px
+        }
+
+        .col-6 {
+            float: left;
+            width: 50%;
+            padding: 5px
+        }
+
+        .col-7 {
+            float: left;
+            width: 58.33%;
+            padding: 5px
+        }
+
+        .col-8 {
+            float: left;
+            width: 66.66%;
+            padding: 5px
+        }
+
+        .col-9 {
+            float: left;
+            width: 75%;
+            padding: 5px
+        }
+
+        .col-10 {
+            float: left;
+            width: 83.33%;
+            padding: 5px
+        }
+
+        .col-11 {
+            float: left;
+            width: 91.66%;
+            padding: 5px
+        }
+
+        .col-12 {
+            float: left;
+            width: 100%;
+            padding: 5px
+        }
+
+        .nav {
+            background-color: black;
+            height: 40px;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .navbutton {
+            padding: 12px;
+            position: relative;
+            top: 11px;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .navbutton:hover {
+            background-color: red;
+        }
+
+        div.overflow {
+            background-color: #eee;
+            width: 200px;
+            height: 70px;
+            border: 1px dotted black;
+            overflow-y: auto;
+        }
+
+        .footer {
+            position: relative;
+            bottom: 0%;
+            width: 100%;
+            height: 40px;
+            background-color: #8a8a8a;
+        }
+
+        .potato {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 70%;
+            margin: auto;
+            min-height: 120vh;
+        }
+
+        .center {
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="nav">
+            <a class="navbutton" href="#h" type="button">Home</a>
+            <a class="navbutton" href="#n" type="button">News</a>
+            <a class="navbutton" href="#c" type="button">contact</a>
+            <a class="navbutton" href="#a" type="button">about</a>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-large.png" alt="cat">
+                </div>
+                <div class="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iure animi harum
+                    possimus, molestiae adipisci. Quidem perferendis ipsa veniam reprehenderit modi. Iusto tempora
+                    voluptas vel, accusamus totam distinctio harum! Molestias, odit aut quibusdam fugiat laudantium
+                    assumenda in asperiores quod quaerat reprehenderit voluptatem itaque mollitia maiores illum numquam
+                    porro sit quo?</div>
+            </div>
+            <div class="row"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quia a eaque
+                doloribus quos, sed dolore similique eum doloremque molestias ab, et id aliquid amet quae error
+                distinctio iste quam.</div>
+            <div class="row">
+                <div class="col-3"><img src="https://picsum.photos/200/301" alt=""></div>
+                <div class="col-3"><img src="https://picsum.photos/200/303" alt=""></div>
+                <div class="col-3"><img src="https://picsum.photos/200/302" alt=""></div>
+                <div class="col-3"><img src="https://picsum.photos/200/300" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="overflow">
+                    <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over
+                        in my mind ever since.</p>
+                    <p>'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in
+                        this world haven't had the advantages that you've had.'</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lol">
+                    <div class="col-4"></div>
+                    <img class="col-4" src="https://wallpaperaccess.com/full/169544.jpg" alt="yes">
+                    <div class="potato">potato</div>
+                    <div class="col-4"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer center">
+            Example@gmail.com
+        </div>
+    </div>
+</body>
+
+</html>

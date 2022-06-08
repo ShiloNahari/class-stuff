@@ -1,0 +1,2 @@
+
+funk(mad, props, newName)

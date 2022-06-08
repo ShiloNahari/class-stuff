@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexing on ya</title>
+    <style>
+    .flex-row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .flex-row{
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: start;
+        
+    }
+    .flex-row>div{
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .flex-col{        
+        display: flex;
+        background-color: DodgerBlue;
+        flex-direction: column;
+        
+        width: max-content;
+    }
+    .flex-col>div{
+        background-color: #f1f1f1;
+        margin: 15px;
+        padding: 0px 60px;
+        font-size: 30px;
+    }
+    div>div:nth-child(2){
+        color: aqua;
+    }
+    div>div:hover{
+        transform: rotate(0.25turn);
+        color: red;
+    }
+    div{
+        margin: 20px;
+    }
+    
+   
+    </style>    
+</head>
+<body>
+    
+    <div class="flex-row">
+        <div><p>menu 1</p></div>
+        <div><p>menu 2</p></div>
+        <div><p>menu 3</p></div>
+        <div><p>menu 4</p></div>
+    </div>
+   
+    <div class="flex-col">
+        <div><p>menu 1</p></div>
+        <div><p>menu 2</p></div>
+        <div><p>menu 3</p></div>
+        <div><p>menu 4</p></div>
+    </div>
+</body>
+</html>

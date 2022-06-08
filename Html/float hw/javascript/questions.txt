@@ -1,0 +1,4 @@
+in the rare scenerio where you 
+start a camel case "name" with someone's 
+name, do you start with with lower case 
+or capital case?

@@ -1,0 +1,9 @@
+p {
+    border-bottom: 10px solid darkgreen;
+}
+#test {
+    border: 4px dotted darkslateblue;
+}
+#test2 {
+    border: solid
+}

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgba(201, 30, 50, 0.8);
+    gap: 10px;
+}
+
+.container>div {
+    background-color: rgba(201, 30, 50, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.header {
+    grid-column: 1/6;
+}
+
+.nav .ad .main .sidebar .footer

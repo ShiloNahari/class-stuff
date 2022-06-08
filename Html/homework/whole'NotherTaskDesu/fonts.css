@@ -1,0 +1,69 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+    font-family: 'Courier New', Courier, monospace, Verdana, Geneva, Tahoma, sans-serif;
+}
+    h1{
+    font-size: 3em;
+    text-align: center;
+}
+    p{
+    direction: auto;
+}
+    p.first{
+        direction: rtl;
+        font-family: 'Open Sans', sans-serif;;
+    }
+    .container{
+        max-width: 1200px;
+        max-height: 1200px;
+        align-self: auto;
+        border: 1px solid;
+        margin: auto;
+
+    }
+    .image{
+        max-width: 600px;
+        max-height: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+        border: 2px solid red;
+        padding: 20px;
+    }
+    h2{
+
+        display: block;
+        text-align: center;
+    }
+    table,th, tr, td{
+        border: 1px solid lightgray ;
+        border-collapse: collapse;
+        padding:0.5em;
+        }
+        th,td:first-child{
+            background-color: silver;
+        }
+    table{
+        min-width: 800px;
+        margin: 100px auto auto auto;
+
+    }
+    td:nth-child(3){
+        background-color: lightgreen;
+    }
+    td:nth-child(5){
+        background-color: lightgreen;
+
+    }
+    td:nth-child(+6){
+        background-color: burlywood;
+    }
+    th:nth-child(6),td:nth-child(6){
+        border: 4px solid mediumvioletred;
+        border-bottom: hidden;
+    }
+    .bi{
+        color: salmon;
+    }

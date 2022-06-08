@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damage reduction from ied</title>
+</head>
+<body>
+    <input type="text" id="ied" oninput="dis()" placeholder="your ied">
+    <input type="text" id="PDR" oninput="dis()" placeholder="boss's PDR" value="300">
+    <input type="button" value="Calc!" onclick="dis()">
+    <p id="answer"></p>
+    <script>
+        function dis() {
+            let ied = document.getElementById("ied").value,
+                PDR = document.getElementById("PDR").value,
+                damageReduction = parseFloat(PDR - (PDR*ied/100)).toFixed(2),
+                answer = document.getElementById("answer"),
+                trueDamage = parseFloat(((1 - ((PDR - (PDR*ied/100))/100))*100)).toFixed(2);
+                if (damageReduction < 0){damageReduction = 0}
+            else if (damageReduction > 100){damageReduction = 100}
+            trueDamage.range
+            if (trueDamage > 100 ) { trueDamage = 100} else if (trueDamage < 0) {trueDamage = 0}
+            answer.innerText = damageReduction + "% damage reduction. you deal " + trueDamage + "% damage"
+            
+            
+            // parseFloat(formula).toFixed(2);
+        }
+    </script>
+</body>
+</html>

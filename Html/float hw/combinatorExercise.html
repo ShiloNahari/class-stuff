@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+    box-sizing: border-box;
+    }
+    body{ 
+    margin: 0px;
+    padding: 0px;
+    }
+    div[class*="col-"]{
+    float:left;
+    padding:15px;
+    }
+    img{
+        clear:both;
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .purple{background-color: purple;}
+    .blue{background-color: lightskyblue;}
+    p{color: black; text-align: center;}
+    div p{color: rgb(255, 0, 191);}
+    
+    @media screen and (min-width:600px){
+    div>p {color:red;}
+    .col-s-1{width: 8.33%;}   
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33%;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;} 
+    }
+    @media screen and (min-width:900px) {
+    div+p{color: blueviolet;}  
+    .col-1{width: 8.33%;}   
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;} 
+    }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <div>
+    <p>This is a paragraph inside a div element.</p>
+    <p>This is another paragraph inside a div element.</p>
+    <span><p>This a paragraph inside a span element, inside a div element.</p></span>
+    </div>
+    <p>This is a paragraph, not inside a div element.</p>
+    <p>This is another paragraph, not inside a div element.</p>
+    <img src="https://picsum.photos/200/300" alt="random pic" title="random bug">
+    <div class="row"></div>
+    <p>this is  4 words</p>
+
+    <div class="row">
+        <div class="purple col-s-3 col-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, voluptas error. Neque, unde. Et, omnis aliquid esse aperiam dolorum assumenda qui sint excepturi libero! Quod quo numquam cumque omnis facere laudantium deleniti maxime. Consequatur, nam? Atque, illum quam natus quisquam debitis perspiciatis recusandae, necessitatibus dolorem consequuntur explicabo voluptates optio eaque?
+        </div>
+        <div class="col-s-9 col-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quaerat vero hic numquam, itaque dolorem magnam eos cupiditate doloremque tenetur illo molestias a, voluptate qui. Enim sint velit odio cupiditate ducimus officia rem quis ratione ex error, inventore fugiat voluptate! Quam, laudantium? Rerum, pariatur! Libero natus est eveniet ipsa tenetur!</div>
+        <div class="blue col-4 col-s-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum error ex doloribus. Voluptatem sunt ad enim voluptates dolores autem ullam eligendi mollitia magnam? Iure mollitia fuga, eaque ipsam ab placeat doloremque illum incidunt ea repudiandae, itaque eos! Atque ipsum voluptas culpa officiis odio cum laudantium ab architecto, dolores, quaerat pariatur.</div>
+    </div>
+</div>    
+</body>
+</html>
